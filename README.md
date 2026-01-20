@@ -27,7 +27,7 @@ Instead of opening Amazon, Flipkart, and Myntra one by one, simply tell DealDroi
 
 ---
 ## 📸 Demo
-![DealDroid Demo]()
+![DealDroid Demo](https://youtu.be/3mmDZM8EvTQ)
 
 ---
 ## 🏃‍♂️ How to Run It
@@ -59,4 +59,5 @@ You'll need an Android phone (or emulator) and a Google API Key.
     ```
 
 ---
+
 
