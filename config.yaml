@@ -1,0 +1,117 @@
+
+llm_profiles:
+
+  manager:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-pro"
+    temperature: 0.0
+
+  executor:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-pro"
+    temperature: 0.0
+
+  codeact:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  scripter:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.0
+
+  text_manipulator:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.0
+
+  app_opener:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  structured_output:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+
+agent:
+llm_profiles:
+
+  manager:
+    provider: "GoogleGenAI"
+    model: "models/gemini-3-flash-preview"
+    temperature: 1.0
+
+  executor:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.5
+
+  codeact:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  scripter:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  text_manipulator:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  app_opener:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+  structured_output:
+    provider: "GoogleGenAI"
+    model: "models/gemini-2.5-flash"
+    temperature: 0.1
+
+
+agent:
+  max_steps: 50
+  reasoning: true 
+  vision: false
+
+  llm_bindings:
+    manager: "manager"
+    executor: "executor"
+    codeact: "codeact"
+    scripter: "scripter"
+    text_manipulator: "text_manipulator"
+    app_opener: "app_opener"
+    structured_output: "structured_output"
+
+device:
+  platform: "android"
+  use_tcp: false 
+
+logging:
+  save_trajectory: "step"
+  max_steps: 50
+  reasoning: true 
+  vision: false
+
+  llm_bindings:
+    manager: "manager"
+    executor: "executor"
+    codeact: "codeact"
+    scripter: "scripter"
+    text_manipulator: "text_manipulator"
+    app_opener: "app_opener"
+    structured_output: "structured_output"
+
+device:
+  platform: "android"
+  use_tcp: false 
+
+logging:
+  save_trajectory: "step"

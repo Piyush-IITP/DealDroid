@@ -1,0 +1,11 @@
+[project]
+name = "dealdroid"
+version = "0.1.0"
+description = "AI Agent that finds the best deals across different Shopping platforms."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "droidrun>=0.4.19",
+    "llama-index-llms-google-genai>=0.8.3",
+    "python-dotenv>=1.0.0"
+]
